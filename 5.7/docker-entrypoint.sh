@@ -70,7 +70,7 @@ if [ "$1" = 'mysqld' ]; then
 			MYSQL_ONETIME_PASSWORD=true
 		fi
 		mkdir -p "$DATADIR"
-		chown -R mysql:mysql "$DATADIR"
+		#chown -R mysql:mysql "$DATADIR"
 
 		echo '[Entrypoint] Initializing database'
 		"$@" --initialize-insecure
